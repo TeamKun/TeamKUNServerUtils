@@ -1,11 +1,9 @@
 package net.kunmc.lab.teamkunserverutils.feature;
 
-import net.kunmc.lab.teamkunserverutils.common.Decoration;
+import net.kunmc.lab.teamkunserverutils.common.constants.Decoration;
 
 public enum ResultBuilder {
-  DISABLE_ERROR(false, "エラー: この機能は現在無効化されています", Decoration.RED),
-  NOTEXISTS_OPS_JSON_ERROR(false, "エラー: /plugins/TeamKUNServerUtilsにコピー元となるops.jsonを配置してください",
-      Decoration.RED);
+  DISABLE_ERROR(false, "エラー: この機能は現在無効化されています", Decoration.RED);
 
   private boolean isSucceed;
   private String message;

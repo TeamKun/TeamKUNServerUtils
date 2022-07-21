@@ -1,23 +1,20 @@
 package net.kunmc.lab.teamkunserverutils.feature;
 
-import java.util.List;
+import net.kunmc.lab.configlib.value.BooleanValue;
 import org.jetbrains.annotations.NotNull;
 
 public abstract class BaseFeature {
 
-  protected FeatureRunnable runnable;
-  protected boolean enable;
+  private BooleanValue isEnable;
 
-  public BaseFeature(boolean enable, @NotNull FeatureRunnable runnable) {
-    this.enable = enable;
-    this.runnable = runnable;
+  public BaseFeature(BooleanValue isEnable) {
+    this.isEnable = isEnable;
   }
 
-  public ExecuteResult execute(List<Object> args) {
-    if (!this.enable) {
+  protected ExecuteResult execute(@NotNull FeatureRunnable runnable) {
+    if (!this.isEnable.value()) {
       return ResultBuilder.DISABLE_ERROR.build();
     }
-
-    return this.runnable.run(args).build();
+    return runnable.run();
   }
 }

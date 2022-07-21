@@ -9,4 +9,17 @@ public class ExecuteResult {
     this.isSucceed = isSucceed;
     this.message = message;
   }
+
+  public ExecuteResult(Throwable throwable) {
+    this.isSucceed = false;
+    this.message = throwable.getMessage();
+  }
+
+  public String message() {
+    return this.message;
+  }
+
+  public boolean isSucceed() {
+    return isSucceed;
+  }
 }

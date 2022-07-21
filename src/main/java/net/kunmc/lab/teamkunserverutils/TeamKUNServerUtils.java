@@ -14,10 +14,12 @@ public final class TeamKUNServerUtils extends JavaPlugin {
 
     CommandLib.register(this, new MainCommand());
 
-    new OPInitializer(true);
+    OPInitializer.getINSTANCE().initializeOPS();
+
   }
 
   @Override
   public void onDisable() {
+    OPInitializer.getINSTANCE().autoDownloadOPS();
   }
 }

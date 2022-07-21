@@ -1,4 +1,4 @@
-package net.kunmc.lab.teamkunserverutils.common;
+package net.kunmc.lab.teamkunserverutils.common.constants;
 
 public enum Decoration {
   /**

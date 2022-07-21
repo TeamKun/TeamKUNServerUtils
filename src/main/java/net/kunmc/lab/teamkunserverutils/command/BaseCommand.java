@@ -6,6 +6,6 @@ import org.jetbrains.annotations.NotNull;
 public abstract class BaseCommand extends Command {
 
   public BaseCommand(@NotNull CommandName commandName) {
-    super(commandName.name());
+    super(commandName.getCommandName());
   }
 }
