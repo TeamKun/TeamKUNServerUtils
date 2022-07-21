@@ -5,16 +5,20 @@ import org.jetbrains.annotations.NotNull;
 
 public abstract class BaseFeature {
 
-  private BooleanValue isEnable;
+  private BooleanValue isEnabled;
 
-  public BaseFeature(BooleanValue isEnable) {
-    this.isEnable = isEnable;
+  public BaseFeature(BooleanValue isEnabled) {
+    this.isEnabled = isEnabled;
   }
 
   protected ExecuteResult execute(@NotNull FeatureRunnable runnable) {
-    if (!this.isEnable.value()) {
+    if (!this.isEnabled()) {
       return ResultBuilder.DISABLE_ERROR.build();
     }
     return runnable.run();
+  }
+
+  protected boolean isEnabled() {
+    return this.isEnabled.value();
   }
 }

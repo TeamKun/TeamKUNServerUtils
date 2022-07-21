@@ -12,6 +12,7 @@ public class Config extends BaseConfig {
   public BooleanValue enableOPSInitializer = new BooleanValue(true);
   public BooleanValue enableAutoOPSInitialize = new BooleanValue(true);
   public StringValue WEPermissionName = new StringValue("we");
+  public BooleanValue enableReloadGuard = new BooleanValue(true);
 
   public Config(@NotNull Plugin plugin) {
     super(plugin);
