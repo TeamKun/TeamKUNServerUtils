@@ -40,13 +40,6 @@ public class OPInitializer extends BaseFeature {
   }
 
   /**
-   * 現状のOPSを保存する.
-   */
-  public ExecuteResult backupOPS() {
-    return null;
-  }
-
-  /**
    * OPSを初期化する.
    */
   public ExecuteResult initializeOPS() {
