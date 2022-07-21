@@ -25,4 +25,8 @@ public class MessageUtil {
       ctx.sendFailure(BASE_MESSAGE + result.message());
     }
   }
+
+  public static String getInfoMessage(String message) {
+    return BASE_MESSAGE + message;
+  }
 }
