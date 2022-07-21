@@ -2,7 +2,7 @@ package net.kunmc.lab.teamkunserverutils;
 
 import net.kunmc.lab.commandlib.CommandLib;
 import net.kunmc.lab.teamkunserverutils.command.MainCommand;
-import net.kunmc.lab.teamkunserverutils.feature.OPInitializer.OPInitializer;
+import net.kunmc.lab.teamkunserverutils.feature.opinitializer.OPInitializer;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public final class TeamKUNServerUtils extends JavaPlugin {

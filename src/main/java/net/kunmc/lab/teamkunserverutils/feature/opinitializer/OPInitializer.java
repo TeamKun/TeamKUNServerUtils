@@ -1,4 +1,4 @@
-package net.kunmc.lab.teamkunserverutils.feature.OPInitializer;
+package net.kunmc.lab.teamkunserverutils.feature.opinitializer;
 
 import com.google.gson.Gson;
 import com.google.gson.internal.LinkedTreeMap;

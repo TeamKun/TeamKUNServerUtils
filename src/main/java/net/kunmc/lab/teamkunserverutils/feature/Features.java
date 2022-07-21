@@ -1,6 +1,6 @@
 package net.kunmc.lab.teamkunserverutils.feature;
 
-import net.kunmc.lab.teamkunserverutils.feature.OPInitializer.OPInitializer;
+import net.kunmc.lab.teamkunserverutils.feature.opinitializer.OPInitializer;
 
 public enum Features {
   OP_INITIALIZER(OPInitializer.getINSTANCE());

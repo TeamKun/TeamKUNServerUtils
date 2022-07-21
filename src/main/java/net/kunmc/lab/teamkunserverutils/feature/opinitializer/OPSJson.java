@@ -1,4 +1,4 @@
-package net.kunmc.lab.teamkunserverutils.feature.OPInitializer;
+package net.kunmc.lab.teamkunserverutils.feature.opinitializer;
 
 import java.util.ArrayList;
 import java.util.List;
