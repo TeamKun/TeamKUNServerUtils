@@ -6,6 +6,7 @@ import net.kunmc.lab.teamkunserverutils.State;
 import net.kunmc.lab.teamkunserverutils.common.constants.CommonConst;
 import net.kunmc.lab.teamkunserverutils.common.constants.Decoration;
 import net.kunmc.lab.teamkunserverutils.common.utils.MessageUtil;
+import net.kunmc.lab.teamkunserverutils.common.utils.PluginUtil;
 import net.kunmc.lab.teamkunserverutils.feature.BaseFeature;
 import org.bukkit.Bukkit;
 import org.bukkit.event.EventHandler;
@@ -31,6 +32,9 @@ public class ReloadGuard extends BaseFeature implements Listener {
       return;
     }
 
+    if (!PluginUtil.existsPlugin(CommonConst.LUCKPERMS)) {
+      return;
+    }
     event.getPlayer().sendMessage(Decoration.RED.code + MessageUtil.getInfoMessage(
         CommonConst.LUCKPERMS + "が導入されているサーバーでのReloadコマンド実行は禁止されています"));
 

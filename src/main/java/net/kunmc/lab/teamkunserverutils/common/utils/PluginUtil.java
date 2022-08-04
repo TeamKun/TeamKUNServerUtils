@@ -12,6 +12,10 @@ public class PluginUtil {
       return false;
     }
 
+    if (!luckPerms.isEnabled()) {
+      return false;
+    }
+
     return true;
   }
 }
