@@ -11,7 +11,7 @@
 
 - ksu
     - op
-        - init - ops.jsonを初期化
+        - init - ops.jsonを再取得
 - gw [player] - 対象にlpのWE権限を付与 (/lp user [player] parent add we のショートカット)
 
 ### CONFIG
