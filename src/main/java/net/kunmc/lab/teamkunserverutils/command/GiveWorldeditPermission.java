@@ -14,7 +14,7 @@ public class GiveWorldeditPermission extends BaseCommand {
   public GiveWorldeditPermission() {
     super(CommandName.GIVE_WORLDEDIT_PERMISSION);
     argument(argumentBuilder -> {
-      argumentBuilder.entityArgument("player").execute((ctx) -> {
+      argumentBuilder.playersArgument("player").execute((ctx) -> {
         if (!PluginUtil.existsPlugin(CommonConst.LUCKPERMS)) {
           ctx.sendFailure(
               MessageUtil.getInfoMessage("エラー: このサーバーには" + CommonConst.LUCKPERMS + "が導入されていません"));
